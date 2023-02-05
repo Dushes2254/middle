@@ -1,0 +1,14 @@
+{
+  "name": "middle",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
