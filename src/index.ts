@@ -1,3 +1,3 @@
 import { test } from './test'
 
-test(12)
+test(132)
