@@ -10,7 +10,7 @@ export default (env: BuildEnv) => {
     html: path.resolve(__dirname, 'public', 'index.html'),
   }
 
-  const mode = env.mode
+  const mode = env.mode || 'development'
   const port = env.port || 3000
 
   const isDev = mode === 'development'
