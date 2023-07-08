@@ -7,7 +7,7 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
     test: /\.svg$/,
     use: ['@svgr/webpack'],
   }
-  
+
   const babelLoader = {
     test: /\.(js|jsx|ts|tsx)$/,
     exclude: /node_modules/,
