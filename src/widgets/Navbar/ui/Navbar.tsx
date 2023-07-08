@@ -1,3 +1,4 @@
+/* eslint-disable i18next/no-literal-string */
 import { FC } from 'react'
 import { AppRoutes, RoutePath } from 'shared/config/routeConfig/routeConfig'
 import { classNames } from 'shared/lib/classNames/classNames'
