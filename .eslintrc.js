@@ -37,9 +37,7 @@ module.exports = {
     'no-undef': [0, { typeof: true }],
     'comma-dangle': [2, 'never'],
     'i18next/no-literal-string': [2, { markupOnly: true }],
-    'linebreak-style': [2, 'windows'],
-    'implicit-arrow-linebreak': [2, 'below'],
-    'arrow-body-style': [2, 'always', { requireReturnForObjectLiteral: true }]
+    'linebreak-style': [2, 'windows']
   },
   globals: {
     __IS_DEV__: true
