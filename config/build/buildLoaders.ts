@@ -3,6 +3,22 @@ import { RuleSetRule } from 'webpack'
 import { BuildOptions } from './types/config'
 
 export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
+  const svgLoader = {
+    test: /\.svg$/,
+    use: ['@svgr/webpack']
+  }
+
+  const babelLoader = {
+    test: /\.(js|jsx|ts|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env']
+      }
+    }
+  }
+
   const cssLoader = {
     test: /\.s[ac]ss$/i,
     use: [
@@ -12,19 +28,28 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
         options: {
           modules: {
             auto: (resPath: string) => resPath.includes('.module.'),
-            localIdentName: isDev ? '[path][name]__[local]--[hash:base64:8]' : '[hash:base64:8]',
-          },
-        },
+            localIdentName: isDev ? '[path][name]__[local]--[hash:base64:8]' : '[hash:base64:8]'
+          }
+        }
       },
-      'sass-loader',
-    ],
+      'sass-loader'
+    ]
   }
 
   const typescriptLoader = {
     test: /\.tsx?$/,
     use: 'ts-loader',
-    exclude: /node_modules/,
+    exclude: /node_modules/
   }
 
-  return [typescriptLoader, cssLoader]
+  const fileLoader = {
+    test: /\.(png|jpe?g|gif|woff|woff2)$/i,
+    use: [
+      {
+        loader: 'file-loader'
+      }
+    ]
+  }
+
+  return [fileLoader, svgLoader, babelLoader, typescriptLoader, cssLoader]
 }
