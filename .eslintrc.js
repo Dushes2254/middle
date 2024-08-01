@@ -34,7 +34,7 @@ module.exports = {
     'react/require-default-props': 0,
     'react/jsx-props-no-spreading': 1,
     'no-shadow': 0,
-    'max-len': [2, 120],
+    'max-len': [2, 120, { ignoreComments: true }],
     'import/no-extraneous-dependencies': 0,
     'arrow-parens': ['error', 'as-needed'],
     '@typescript-eslint/ban-ts-comment': 0,
