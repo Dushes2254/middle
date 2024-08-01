@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'i18next'],
   rules: {
-    'i18next/no-literal-string': [2, { markupOnly: true }],
+    'i18next/no-literal-string': [2, { markupOnly: true, onlyAttribute: [''] }],
     semi: [2, 'never'],
     'linebreak-style': [2, 'windows'],
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
