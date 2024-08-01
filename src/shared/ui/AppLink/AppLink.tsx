@@ -16,8 +16,10 @@ interface AppLinkProps extends LinkProps {
 
 export const AppLink: FC<AppLinkProps> = ({
   className, children, to, theme = AppLinkTheme.PRIMARY, ...props
-}) => (
-  <Link to={to} className={classNames(cls.appLink, {}, [className, cls[theme]])} {...props}>
-    {children}
-  </Link>
-)
+}) => {
+  return (
+    <Link to={to} className={classNames(cls.appLink, {}, [className, cls[theme]])} {...props}>
+      {children}
+    </Link>
+  )
+}

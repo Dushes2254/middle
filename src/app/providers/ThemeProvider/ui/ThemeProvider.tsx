@@ -7,10 +7,12 @@ export const ThemeProvider: FC = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme)
 
   const defaultProps = useMemo(
-    () => ({
-      theme,
-      setTheme
-    }),
+    () => {
+      return {
+        theme,
+        setTheme
+      }
+    },
     [theme]
   )
 

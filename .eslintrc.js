@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    jest: true
   },
   extends: [
     'plugin:react/recommended',
@@ -37,6 +38,7 @@ module.exports = {
     'max-len': [2, 120, { ignoreComments: true }],
     'import/no-extraneous-dependencies': 0,
     'arrow-parens': ['error', 'as-needed'],
+    'arrow-body-style': ['error', 'always'],
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-unused-vars': [
       1,
