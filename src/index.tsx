@@ -5,12 +5,15 @@ import 'app/styles/index.scss'
 import 'shared/config/i18n/i18n'
 import { ThemeProvider } from 'app/providers/themeProvider'
 import App from 'app/App'
+import { ErrorBoundary } from 'app/providers/ErrorBoundary'
 
 render(
   <BrowserRouter>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <ErrorBoundary>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </ErrorBoundary>
   </BrowserRouter>,
   document.getElementById('root')
 )
