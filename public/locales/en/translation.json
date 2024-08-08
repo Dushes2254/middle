@@ -1,7 +1,10 @@
 {
   "language": "English",
+  "shortLang": "En",
   "pageNotFound": "Page not found",
   "unexpectedError": "An unexpected error has occurred",
   "reloadPage": "Reload the page",
-  "error": "Error"
+  "error": "Error",
+  "mainPage": "Main Page",
+  "about": "About"
 }

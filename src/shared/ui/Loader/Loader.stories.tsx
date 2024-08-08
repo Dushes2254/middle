@@ -8,9 +8,7 @@ export default {
   component: Loader
 } as ComponentMeta<typeof Loader>
 
-const Template: ComponentStory<typeof Loader> = args => {
-  return <Loader {...args} />
-}
+const Template: ComponentStory<typeof Loader> = args => <Loader {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {}

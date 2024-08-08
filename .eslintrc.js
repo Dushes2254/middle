@@ -20,10 +20,21 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'i18next'],
   rules: {
-    'i18next/no-literal-string': [2, { markupOnly: true, onlyAttribute: [''] }],
+    'i18next/no-literal-string': [
+      2,
+      {
+        markupOnly: true,
+        onlyAttribute: ['']
+      }
+    ],
     semi: [2, 'never'],
     'linebreak-style': [2, 'windows'],
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      2,
+      {
+        extensions: ['.js', '.jsx', '.tsx']
+      }
+    ],
     'import/no-unresolved': 0,
     'import/prefer-default-export': 0,
     'react/react-in-jsx-scope': 0,
@@ -35,10 +46,17 @@ module.exports = {
     'react/require-default-props': 0,
     'react/jsx-props-no-spreading': 1,
     'no-shadow': 0,
-    'max-len': [2, 120, { ignoreComments: true }],
+    'max-len': [
+      2,
+      120,
+      {
+        ignoreComments: true
+      }
+    ],
     'import/no-extraneous-dependencies': 0,
     'arrow-parens': ['error', 'as-needed'],
-    'arrow-body-style': ['error', 'always'],
+    'arrow-body-style': ['error', 'as-needed'],
+    'implicit-arrow-linebreak': 0,
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-unused-vars': [
       1,
@@ -47,7 +65,8 @@ module.exports = {
         argsIgnorePattern: '^_'
       }
     ],
-    'no-underscore-dangle': 0
+    'no-underscore-dangle': 0,
+    'object-curly-newline': 0
   },
   globals: {
     __IS_DEV__: true

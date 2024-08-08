@@ -8,9 +8,7 @@ export default {
   component: NotFoundPage
 } as ComponentMeta<typeof NotFoundPage>
 
-const Template: ComponentStory<typeof NotFoundPage> = () => {
-  return <NotFoundPage />
-}
+const Template: ComponentStory<typeof NotFoundPage> = () => <NotFoundPage />
 
 export const Light = Template.bind({})
 

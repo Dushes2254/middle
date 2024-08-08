@@ -8,9 +8,7 @@ export default {
   component: MainPage
 } as ComponentMeta<typeof MainPage>
 
-const Template: ComponentStory<typeof MainPage> = () => {
-  return <MainPage />
-}
+const Template: ComponentStory<typeof MainPage> = () => <MainPage />
 
 export const Light = Template.bind({})
 
