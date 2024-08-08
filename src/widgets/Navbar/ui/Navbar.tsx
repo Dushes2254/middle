@@ -1,13 +1,13 @@
-import { FC } from 'react'
-import { classNames } from 'shared/lib/classNames/classNames'
-import cls from './Navbar.module.scss'
+import { FC } from 'react';
+import { classNames } from 'shared/lib/classNames/classNames';
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
-  className?: string
+  className?: string;
 }
 
 export const Navbar: FC<NavbarProps> = ({ className }) => (
   <div className={classNames(cls.navbar, {}, [className])}>
     <div className={cls.links}>/</div>
   </div>
-)
+);

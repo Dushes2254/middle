@@ -27,7 +27,7 @@ module.exports = {
         onlyAttribute: ['']
       }
     ],
-    semi: [2, 'never'],
+    semi: [2, 'always'],
     'linebreak-style': [2, 'windows'],
     'react/jsx-filename-extension': [
       2,
@@ -66,7 +66,20 @@ module.exports = {
       }
     ],
     'no-underscore-dangle': 0,
-    'object-curly-newline': 0
+    'object-curly-newline': 0,
+    '@typescript-eslint/member-delimiter-style': [
+      'error',
+      {
+        multiline: {
+          delimiter: 'semi',
+          requireLast: true
+        },
+        singleline: {
+          delimiter: 'semi',
+          requireLast: false
+        }
+      }
+    ]
   },
   globals: {
     __IS_DEV__: true
@@ -79,4 +92,4 @@ module.exports = {
       }
     }
   ]
-}
+};
