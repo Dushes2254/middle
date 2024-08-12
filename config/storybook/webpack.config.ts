@@ -31,5 +31,7 @@ export default ({ config }: { config: Configuration }) => {
     });
   }
 
+  config.resolve?.modules?.unshift(paths.src);
+
   return config;
 };
