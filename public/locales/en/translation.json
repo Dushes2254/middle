@@ -7,5 +7,7 @@
   "error": "Error",
   "mainPage": "Main Page",
   "about": "About",
-  "enter": "Enter"
+  "enter": "Enter",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }
