@@ -9,5 +9,7 @@
   "about": "О нас",
   "enter": "Войти",
   "increment": "Увеличить",
-  "decrement": "Уменьшить"
+  "decrement": "Уменьшить",
+  "enterUsername": "Введите логин",
+  "enterPassword": "Введите пароль"
 }

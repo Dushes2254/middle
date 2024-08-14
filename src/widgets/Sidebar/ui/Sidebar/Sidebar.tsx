@@ -29,7 +29,6 @@ export const Sidebar: FC<SidebarProps> = ({ className }) => {
       <Button
         className={cls.collapsedBtn}
         data-testid='sidebar-toggle'
-        type='button'
         onClick={onToggle}
         theme={ButtonTheme.BACKGROUND_INVERTED}
         square
