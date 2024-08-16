@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import { Configuration, RuleSetRule } from 'webpack';
+import { Configuration, DefinePlugin, RuleSetRule } from 'webpack';
 import path from 'path';
 import { BuildPaths } from '../build/types/config';
 import { buildCssLoader } from '../build/loaders/buildCssLoader';
@@ -32,6 +32,12 @@ export default ({ config }: { config: Configuration }) => {
   }
 
   config.resolve?.modules?.unshift(paths.src);
+
+  config.plugins?.push(
+    new DefinePlugin({
+      __IS_DEV__: true
+    })
+  );
 
   return config;
 };

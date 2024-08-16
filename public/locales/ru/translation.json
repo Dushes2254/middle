@@ -8,8 +8,11 @@
   "mainPage": "Главная страница",
   "about": "О нас",
   "enter": "Войти",
+  "exit": "Выйти",
   "increment": "Увеличить",
   "decrement": "Уменьшить",
   "enterUsername": "Введите логин",
-  "enterPassword": "Введите пароль"
+  "enterPassword": "Введите пароль",
+  "authorizationForm": "Форма авторизации",
+  "wrongLoginData": "Вы ввели неверный логин или пароль"
 }

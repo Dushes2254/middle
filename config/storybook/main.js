@@ -6,4 +6,4 @@ module.exports = {
     builder: 'webpack5'
   },
   staticDirs: ['../../public']
-}
+};

@@ -8,8 +8,11 @@
   "mainPage": "Main Page",
   "about": "About",
   "enter": "Enter",
+  "exit": "Exit",
   "increment": "Increment",
   "decrement": "Decrement",
   "enterUsername": "Enter username",
-  "enterPassword": "Enter password"
+  "enterPassword": "Enter password",
+  "authorizationForm": "Authorization form",
+  "wrongLoginData": "Wrong username or password"
 }
