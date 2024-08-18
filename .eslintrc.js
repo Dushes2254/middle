@@ -84,7 +84,13 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 0,
     'react-hooks/rules-of-hooks': 2,
     'react-hooks/exhaustive-deps': 2,
-    'no-param-reassign': 0
+    'no-param-reassign': 0,
+    'react/jsx-no-useless-fragment': [
+      1,
+      {
+        allowExpressions: true
+      }
+    ]
   },
   globals: {
     __IS_DEV__: true
