@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "firstName": "Андрей",
+    "lastName": "Клименко",
+    "age": 34,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Perm",
+    "username": "Admin",
+    "avatar": "https://sun9-70.userapi.com/impg/5YJgl0dCmEh9FHUxRPfmFWkQaa5xIkH8avboAQ/GR8pm3bQgYE.jpg?size=1062x1313&quality=96&sign=c633f0d0e2c27f6052a62b498e1bfdb1&c_uniq_tag=HWv31O1ru9fQPKSUtYErmr4s8-D5Opa58bVwADARZJU&type=album"
+  }
 }

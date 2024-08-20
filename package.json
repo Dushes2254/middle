@@ -24,6 +24,9 @@
     "storybook:build": "build-storybook -c ./config/storybook",
     "prepare": "husky install"
   },
+  "commands": {
+    "run test unit for current file": "npm run test:unit ${fileBasename}"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
