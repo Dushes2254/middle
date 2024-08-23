@@ -1,3 +1,6 @@
 {
-  "profilePage": "Профиль"
+  "profile": "Профиль",
+  "edit": "Редактировать",
+  "yourName": "Ваше имя",
+  "yourLastName": "Ваша фамилия"
 }

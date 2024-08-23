@@ -42,7 +42,7 @@ module.exports = {
     'jsx-quotes': [2, 'prefer-single'],
     'import/extensions': 0,
     'comma-dangle': [2, 'never'],
-    'no-unused-vars': 0,
+    'no-unused': 0,
     'react/require-default-props': 0,
     'react/jsx-props-no-spreading': 1,
     'no-shadow': 0,
@@ -93,7 +93,8 @@ module.exports = {
     ]
   },
   globals: {
-    __IS_DEV__: true
+    __IS_DEV__: true,
+    __API__: true
   },
   overrides: [
     {
